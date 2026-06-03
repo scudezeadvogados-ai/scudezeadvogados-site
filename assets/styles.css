@@ -483,6 +483,29 @@ p {
   padding-left: 1.2rem;
 }
 
+.faq-list {
+  display: grid;
+  gap: 18px;
+}
+
+.faq-list article {
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+}
+
+.faq-list article:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.faq-list h3 {
+  color: var(--ink);
+  font-size: 1.08rem;
+}
+
+.faq-list p {
+  margin-bottom: 0;
+}
+
 .site-footer {
   background: var(--brand-blue-dark);
   color: rgba(229, 230, 231, .78);
