@@ -73,6 +73,16 @@ document.addEventListener("click", (event) => {
     return;
   }
 
+  if (href.includes("cal.com/marcus-scudeze")) {
+    trackEvent("click_agendamento", {
+      event_category: "booking",
+      booking_provider: "cal_com",
+      link_text: link.textContent.trim(),
+      link_url: href
+    });
+    return;
+  }
+
   if (href && !href.startsWith("#") && !href.startsWith("mailto:")) {
     trackEvent("select_content", {
       event_category: "navigation",
